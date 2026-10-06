@@ -1,0 +1,38 @@
+[
+  {
+    "id": "beach",
+    "name": "Beach",
+    "icon": "assets/icons/categories/beach.svg",
+    "sortOrder": 1
+  },
+  {
+    "id": "mountain",
+    "name": "Mountain",
+    "icon": "assets/icons/categories/mountain.svg",
+    "sortOrder": 2
+  },
+  {
+    "id": "desert",
+    "name": "Desert",
+    "icon": "assets/icons/categories/desert.svg",
+    "sortOrder": 3
+  },
+  {
+    "id": "forest",
+    "name": "Forest",
+    "icon": "assets/icons/categories/forest.svg",
+    "sortOrder": 4
+  },
+  {
+    "id": "camping",
+    "name": "Camping",
+    "icon": "assets/icons/categories/camping.svg",
+    "sortOrder": 5
+  },
+  {
+    "id": "fishing",
+    "name": "Fishing",
+    "icon": "assets/icons/categories/fishing.svg",
+    "sortOrder": 6
+  }
+]

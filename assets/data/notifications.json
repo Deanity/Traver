@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ntf_001",
+    "userId": null,
+    "type": "promo",
+    "title": "Special Holiday Discount!",
+    "body": "Get 20% off for any beach package this week. Use code TRAVER20.",
+    "refBookingId": null,
+    "isRead": false,
+    "createdAt": "2026-10-06T10:00:00Z"
+  },
+  {
+    "id": "ntf_002",
+    "userId": "usr_001",
+    "type": "booking_confirmed",
+    "title": "Booking Confirmed",
+    "body": "Your trip to Mount Bromo is confirmed. Prepare your hiking gear!",
+    "refBookingId": "bk_001",
+    "isRead": true,
+    "createdAt": "2026-10-05T14:21:00Z"
+  }
+]

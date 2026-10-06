@@ -1,0 +1,14 @@
+[
+  {
+    "id": "sh_001",
+    "userId": "usr_001",
+    "query": "Bali",
+    "createdAt": "2026-10-05T09:00:00Z"
+  },
+  {
+    "id": "sh_002",
+    "userId": "usr_001",
+    "query": "Bromo",
+    "createdAt": "2026-10-05T09:30:00Z"
+  }
+]

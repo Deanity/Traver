@@ -1,0 +1,30 @@
+[
+  {
+    "id": "credit_card",
+    "name": "Credit Card",
+    "icon": "assets/icons/payments/credit_card.svg",
+    "sortOrder": 1,
+    "isActive": true
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal",
+    "icon": "assets/icons/payments/paypal.svg",
+    "sortOrder": 2,
+    "isActive": true
+  },
+  {
+    "id": "apple_pay",
+    "name": "Apple Pay",
+    "icon": "assets/icons/payments/apple_pay.svg",
+    "sortOrder": 3,
+    "isActive": true
+  },
+  {
+    "id": "google_pay",
+    "name": "Google Pay",
+    "icon": "assets/icons/payments/google_pay.svg",
+    "sortOrder": 4,
+    "isActive": true
+  }
+]

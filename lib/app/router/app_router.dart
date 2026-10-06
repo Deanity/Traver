@@ -1,0 +1,112 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import '../../core/widgets/placeholder_screen.dart';
+import 'main_shell_screen.dart';
+import 'routes.dart';
+
+final routerProvider = Provider<GoRouter>((ref) {
+  return GoRouter(
+    initialLocation: AppRoutes.splash,
+    routes: [
+      GoRoute(
+        path: AppRoutes.splash,
+        builder: (context, state) => const PlaceholderScreen(title: 'Splash'),
+      ),
+      GoRoute(
+        path: AppRoutes.onboarding,
+        builder: (context, state) => const PlaceholderScreen(title: 'Onboarding'),
+      ),
+      GoRoute(
+        path: AppRoutes.login,
+        builder: (context, state) => const PlaceholderScreen(title: 'Login'),
+      ),
+      GoRoute(
+        path: AppRoutes.register,
+        builder: (context, state) => const PlaceholderScreen(title: 'Register'),
+      ),
+      GoRoute(
+        path: AppRoutes.otp,
+        builder: (context, state) => const PlaceholderScreen(title: 'OTP Verification'),
+      ),
+      GoRoute(
+        path: AppRoutes.forgotPassword,
+        builder: (context, state) => const PlaceholderScreen(title: 'Forgot Password'),
+      ),
+      GoRoute(
+        path: AppRoutes.resetPassword,
+        builder: (context, state) => const PlaceholderScreen(title: 'Reset Password'),
+      ),
+      GoRoute(
+        path: AppRoutes.accountCreated,
+        builder: (context, state) => const PlaceholderScreen(title: 'Account Created'),
+      ),
+      GoRoute(
+        path: AppRoutes.favoritePlaces,
+        builder: (context, state) => const PlaceholderScreen(title: 'Favorite Places'),
+      ),
+
+      // Bottom Navigation Tab Shell
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, navigationShell) {
+          return MainShellScreen(navigationShell: navigationShell);
+        },
+        branches: [
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.home,
+                builder: (context, state) => const PlaceholderScreen(title: 'Home'),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.trips,
+                builder: (context, state) => const PlaceholderScreen(title: 'My Trips'),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.wishlist,
+                builder: (context, state) => const PlaceholderScreen(title: 'Wishlist'),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: AppRoutes.profile,
+                builder: (context, state) => const PlaceholderScreen(title: 'Profile'),
+              ),
+            ],
+          ),
+        ],
+      ),
+
+      // Other Stack screens
+      GoRoute(
+        path: AppRoutes.destinationDetail,
+        builder: (context, state) => PlaceholderScreen(
+          title: 'Destination Detail: ${state.pathParameters['id']}',
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.search,
+        builder: (context, state) => const PlaceholderScreen(title: 'Search'),
+      ),
+      GoRoute(
+        path: AppRoutes.category,
+        builder: (context, state) => PlaceholderScreen(
+          title: 'Category: ${state.pathParameters['id']}',
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.notifications,
+        builder: (context, state) => const PlaceholderScreen(title: 'Notifications'),
+      ),
+    ],
+  );
+});

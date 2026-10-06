@@ -1,0 +1,41 @@
+[
+  {
+    "id": "usr_001",
+    "name": "Demo User",
+    "email": "demo@traver.app",
+    "phone": "+6281200000001",
+    "passwordHash": "demo123",
+    "passwordSalt": "salt",
+    "avatar": null,
+    "emailVerified": true,
+    "favoriteCategories": ["beach", "mountain"],
+    "createdAt": "2026-10-01T08:00:00Z",
+    "updatedAt": "2026-10-01T08:00:00Z"
+  },
+  {
+    "id": "usr_002",
+    "name": "Putri Lestari",
+    "email": "putri@traver.app",
+    "phone": "+6281200000002",
+    "passwordHash": "demo123",
+    "passwordSalt": "salt",
+    "avatar": null,
+    "emailVerified": true,
+    "favoriteCategories": ["camping", "forest"],
+    "createdAt": "2026-10-02T08:00:00Z",
+    "updatedAt": "2026-10-02T08:00:00Z"
+  },
+  {
+    "id": "usr_003",
+    "name": "Rizky Pratama",
+    "email": "rizky@traver.app",
+    "phone": "+6281200000003",
+    "passwordHash": "demo123",
+    "passwordSalt": "salt",
+    "avatar": null,
+    "emailVerified": true,
+    "favoriteCategories": ["desert", "fishing"],
+    "createdAt": "2026-10-03T08:00:00Z",
+    "updatedAt": "2026-10-03T08:00:00Z"
+  }
+]

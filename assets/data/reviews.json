@@ -1,0 +1,22 @@
+[
+  {
+    "id": "rev_001",
+    "destinationId": "dest_001",
+    "userId": "usr_002",
+    "userName": "Putri Lestari",
+    "avatar": null,
+    "rating": 5,
+    "comment": "Absolutely breathtaking sunset! Booking through Traver was completely smooth.",
+    "createdAt": "2026-09-12T10:00:00Z"
+  },
+  {
+    "id": "rev_002",
+    "destinationId": "dest_002",
+    "userId": "usr_003",
+    "userName": "Rizky Pratama",
+    "avatar": null,
+    "rating": 5,
+    "comment": "The sunrise tour was organized flawlessly. Highly recommended!",
+    "createdAt": "2026-09-15T11:30:00Z"
+  }
+]

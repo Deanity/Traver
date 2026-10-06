@@ -1,0 +1,94 @@
+[
+  {
+    "id": "dest_001",
+    "name": "Kuta Beach",
+    "location": "Bali, Indonesia",
+    "category": "beach",
+    "price": 245.0,
+    "currency": "USD",
+    "priceUnit": "per_person",
+    "durationDays": 4,
+    "maxGuests": 10,
+    "rating": 4.8,
+    "reviewCount": 120,
+    "images": [
+      "assets/onBoardingImage/Image-1.png",
+      "assets/onBoardingImage/Image-2.png"
+    ],
+    "included": ["flight", "hotel", "tours"],
+    "about": "Enjoy the magnificent sunset and world-class waves at Kuta Beach, one of Bali's most iconic coastlines.",
+    "isPopular": true,
+    "coordinates": { "lat": -8.7183, "lng": 115.1686 },
+    "mapImage": null,
+    "isActive": true
+  },
+  {
+    "id": "dest_002",
+    "name": "Mount Bromo",
+    "location": "East Java, Indonesia",
+    "category": "mountain",
+    "price": 120.0,
+    "currency": "USD",
+    "priceUnit": "per_person",
+    "durationDays": 3,
+    "maxGuests": 8,
+    "rating": 4.9,
+    "reviewCount": 145,
+    "images": [
+      "assets/onBoardingImage/Image-2.png",
+      "assets/onBoardingImage/Image-3.png"
+    ],
+    "included": ["hotel", "tours"],
+    "about": "Witness the dramatic volcanic landscape of Mount Bromo enveloped in morning mist and golden sunrise rays.",
+    "isPopular": true,
+    "coordinates": { "lat": -7.9425, "lng": 112.953 },
+    "mapImage": null,
+    "isActive": true
+  },
+  {
+    "id": "dest_003",
+    "name": "Labuan Bajo & Komodo",
+    "location": "East Nusa Tenggara, Indonesia",
+    "category": "beach",
+    "price": 380.0,
+    "currency": "USD",
+    "priceUnit": "per_person",
+    "durationDays": 5,
+    "maxGuests": 12,
+    "rating": 4.9,
+    "reviewCount": 210,
+    "images": [
+      "assets/onBoardingImage/Image-3.png",
+      "assets/onBoardingImage/Image-1.png"
+    ],
+    "included": ["flight", "hotel", "tours"],
+    "about": "Sail through crystal-clear waters, visit Pink Beach, and meet the legendary Komodo dragons in their natural habitat.",
+    "isPopular": true,
+    "coordinates": { "lat": -8.4539, "lng": 119.889 },
+    "mapImage": null,
+    "isActive": true
+  },
+  {
+    "id": "dest_004",
+    "name": "Rinjani Volcano Camp",
+    "location": "Lombok, Indonesia",
+    "category": "camping",
+    "price": 190.0,
+    "currency": "USD",
+    "priceUnit": "per_person",
+    "durationDays": 4,
+    "maxGuests": 6,
+    "rating": 4.7,
+    "reviewCount": 98,
+    "images": [
+      "assets/onBoardingImage/Image-1.png",
+      "assets/onBoardingImage/Image-2.png"
+    ],
+    "included": ["hotel", "tours"],
+    "about": "Trek along the volcanic rim of Mount Rinjani and camp by the mesmerizing crater lake Segara Anak.",
+    "isPopular": false,
+    "coordinates": { "lat": -8.4113, "lng": 116.4573 },
+    "mapImage": null,
+    "isActive": true
+  }
+]

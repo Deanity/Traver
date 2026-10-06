@@ -1,0 +1,28 @@
+[
+  {
+    "id": "bk_001",
+    "userId": "usr_001",
+    "destinationId": "dest_002",
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-16",
+    "guests": 2,
+    "contactName": "Demo User",
+    "contactEmail": "demo@traver.app",
+    "contactPhone": "+6281200000001",
+    "specialRequest": null,
+    "pricePerPerson": 120.0,
+    "subtotal": 240.0,
+    "serviceFee": 5.0,
+    "total": 245.0,
+    "currency": "USD",
+    "status": "confirmed",
+    "cancelledAt": null,
+    "createdAt": "2026-10-05T14:20:00Z",
+    "payment": {
+      "methodId": "credit_card",
+      "cardLast4": "4242",
+      "status": "paid",
+      "paidAt": "2026-10-05T14:21:00Z"
+    }
+  }
+]
