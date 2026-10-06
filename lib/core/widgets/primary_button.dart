@@ -11,6 +11,7 @@ class PrimaryButton extends StatelessWidget {
   final double height;
   final Color? backgroundColor;
   final Color? textColor;
+  final BorderRadius? borderRadius;
 
   const PrimaryButton({
     super.key,
@@ -20,9 +21,10 @@ class PrimaryButton extends StatelessWidget {
     this.leadingIcon,
     this.trailingIcon,
     this.width,
-    this.height = 52.0,
+    this.height = 54.0,
     this.backgroundColor,
     this.textColor,
+    this.borderRadius,
   });
 
   @override
@@ -34,8 +36,8 @@ class PrimaryButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: backgroundColor ?? AppColors.primary,
           foregroundColor: textColor ?? AppColors.onPrimary,
-          shape: const RoundedRectangleBorder(
-            borderRadius: AppRadius.borderFull,
+          shape: RoundedRectangleBorder(
+            borderRadius: borderRadius ?? AppRadius.borderLg,
           ),
           elevation: 0,
           padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xxl),

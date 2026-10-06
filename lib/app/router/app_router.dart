@@ -1,20 +1,22 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/widgets/placeholder_screen.dart';
+import '../../features/onboarding/onboarding.dart';
 import 'main_shell_screen.dart';
 import 'routes.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
-    initialLocation: AppRoutes.splash,
+    initialLocation: AppRoutes.onboarding,
     routes: [
       GoRoute(
         path: AppRoutes.splash,
-        builder: (context, state) => const PlaceholderScreen(title: 'Splash'),
+        redirect: (context, state) => AppRoutes.onboarding,
+        builder: (context, state) => const OnboardingScreen(),
       ),
       GoRoute(
         path: AppRoutes.onboarding,
-        builder: (context, state) => const PlaceholderScreen(title: 'Onboarding'),
+        builder: (context, state) => const OnboardingScreen(),
       ),
       GoRoute(
         path: AppRoutes.login,
