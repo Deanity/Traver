@@ -11,7 +11,7 @@ class DataSeeder {
     required this.loader,
   });
 
-  static const int currentSeedVersion = 1;
+  static const int currentSeedVersion = 2;
 
   Future<void> seedIfNeeded() async {
     final existingVersion = storage.getInt(StorageKeys.seedVersion) ?? 0;

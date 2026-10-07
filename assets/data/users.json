@@ -1,5 +1,18 @@
 [
   {
+    "id": "usr_000",
+    "name": "Pristia Candra",
+    "email": "pristia@gmail.com",
+    "phone": "+6281200000000",
+    "passwordHash": "demo123",
+    "passwordSalt": "salt",
+    "avatar": null,
+    "emailVerified": true,
+    "favoriteCategories": ["beach", "mountain"],
+    "createdAt": "2026-10-01T08:00:00Z",
+    "updatedAt": "2026-10-01T08:00:00Z"
+  },
+  {
     "id": "usr_001",
     "name": "Demo User",
     "email": "demo@traver.app",

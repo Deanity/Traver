@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/widgets/placeholder_screen.dart';
+import '../../features/auth/auth.dart';
 import '../../features/onboarding/onboarding.dart';
 import 'main_shell_screen.dart';
 import 'routes.dart';
@@ -20,7 +21,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.login,
-        builder: (context, state) => const PlaceholderScreen(title: 'Login'),
+        builder: (context, state) => const LoginScreen(),
       ),
       GoRoute(
         path: AppRoutes.register,
@@ -32,11 +33,11 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.forgotPassword,
-        builder: (context, state) => const PlaceholderScreen(title: 'Forgot Password'),
+        builder: (context, state) => const ForgotPasswordScreen(),
       ),
       GoRoute(
         path: AppRoutes.resetPassword,
-        builder: (context, state) => const PlaceholderScreen(title: 'Reset Password'),
+        builder: (context, state) => const ResetPasswordScreen(),
       ),
       GoRoute(
         path: AppRoutes.accountCreated,
