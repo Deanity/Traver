@@ -97,6 +97,53 @@ class AuthRepository {
       await _storage.setJson(StorageKeys.users, updatedList);
     }
   }
+
+  Future<UserModel> register({
+    required String firstName,
+    required String lastName,
+    required String email,
+    required String password,
+  }) async {
+    final cleanEmail = email.trim().toLowerCase();
+    final cleanPassword = password.trim();
+    final fullName = '$firstName $lastName'.trim();
+
+    if (firstName.trim().isEmpty || lastName.trim().isEmpty) {
+      throw const AuthException('First and last name are required');
+    }
+    if (cleanEmail.isEmpty || !cleanEmail.contains('@')) {
+      throw const AuthException('A valid email address is required');
+    }
+    if (cleanPassword.length < 8) {
+      throw const AuthException('Password must be at least 8 characters long');
+    }
+
+    final usersRaw = _storage.getJson(StorageKeys.users);
+    final currentUsers = usersRaw is List ? List<dynamic>.from(usersRaw) : <dynamic>[];
+
+    for (final item in currentUsers) {
+      if (item is Map<String, dynamic>) {
+        if ((item['email'] as String?)?.toLowerCase() == cleanEmail) {
+          throw const AuthException('An account with this email already exists');
+        }
+      }
+    }
+
+    final newUser = UserModel(
+      id: 'usr_${DateTime.now().millisecondsSinceEpoch}',
+      name: fullName,
+      email: cleanEmail,
+      emailVerified: true,
+      favoriteCategories: const ['beach', 'mountain'],
+    );
+
+    final newUserData = newUser.toJson();
+    newUserData['passwordHash'] = cleanPassword;
+    currentUsers.add(newUserData);
+    await _storage.setJson(StorageKeys.users, currentUsers);
+
+    return newUser;
+  }
 }
 
 final authRepositoryProvider = Provider<AuthRepository>((ref) {

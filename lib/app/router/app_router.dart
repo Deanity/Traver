@@ -25,11 +25,17 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.register,
-        builder: (context, state) => const PlaceholderScreen(title: 'Register'),
+        builder: (context, state) => const RegisterScreen(),
       ),
       GoRoute(
         path: AppRoutes.otp,
-        builder: (context, state) => const PlaceholderScreen(title: 'OTP Verification'),
+        builder: (context, state) {
+          final extra = state.extra as Map<String, dynamic>?;
+          return OtpScreen(
+            email: extra?['email'] as String?,
+            name: extra?['name'] as String?,
+          );
+        },
       ),
       GoRoute(
         path: AppRoutes.forgotPassword,
@@ -41,7 +47,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.accountCreated,
-        builder: (context, state) => const PlaceholderScreen(title: 'Account Created'),
+        builder: (context, state) => const AccountCreatedScreen(),
       ),
       GoRoute(
         path: AppRoutes.favoritePlaces,

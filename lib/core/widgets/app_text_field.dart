@@ -18,6 +18,7 @@ class AppTextField extends StatelessWidget {
   final Color? fillColor;
   final BorderRadius? borderRadius;
   final FloatingLabelBehavior? floatingLabelBehavior;
+  final TextCapitalization textCapitalization;
 
   const AppTextField({
     super.key,
@@ -37,6 +38,7 @@ class AppTextField extends StatelessWidget {
     this.fillColor,
     this.borderRadius,
     this.floatingLabelBehavior,
+    this.textCapitalization = TextCapitalization.none,
   });
 
   @override
@@ -70,6 +72,7 @@ class AppTextField extends StatelessWidget {
           controller: controller,
           obscureText: obscureText,
           keyboardType: keyboardType,
+          textCapitalization: textCapitalization,
           readOnly: readOnly,
           onTap: onTap,
           onChanged: onChanged,
