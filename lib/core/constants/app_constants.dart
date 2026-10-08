@@ -6,6 +6,7 @@ class StorageKeys {
   static const String sessionUserId = 'session_user_id';
   static const String rememberMe = 'remember_me';
   static const String users = 'users';
+  static const String favoritePlaces = 'favorite_places';
 
   // Dynamic user specific keys
   static String bookings(String userId) => 'bookings_$userId';

@@ -5,6 +5,7 @@ export 'presentation/screens/login_screen.dart';
 export 'presentation/screens/register_screen.dart';
 export 'presentation/screens/otp_screen.dart';
 export 'presentation/screens/account_created_screen.dart';
+export 'presentation/screens/favorite_places_screen.dart';
 export 'presentation/screens/forgot_password_screen.dart';
 export 'presentation/screens/reset_password_screen.dart';
 export 'presentation/widgets/social_auth_button.dart';

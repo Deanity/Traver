@@ -51,7 +51,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
       GoRoute(
         path: AppRoutes.favoritePlaces,
-        builder: (context, state) => const PlaceholderScreen(title: 'Favorite Places'),
+        builder: (context, state) => const FavoritePlacesScreen(),
       ),
 
       // Bottom Navigation Tab Shell
