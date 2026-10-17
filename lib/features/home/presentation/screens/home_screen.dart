@@ -162,7 +162,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     List<DestinationModel> destinations,
     Set<String> wishlist,
   ) {
-    // Filter by selected category if any, else prioritize scenic destinations (dest_001, dest_002, etc.)
+    // Filter by selected category if any, else show all destinations
     var list = destinations;
     if (_selectedCategoryId != null) {
       final filtered = destinations

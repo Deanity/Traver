@@ -1,6 +1,6 @@
 [
   {
-    "id": "dest_007",
+    "id": "dest_001",
     "name": "Raja Ampat",
     "location": "West Papua, Indonesia",
     "category": "beach",
@@ -23,7 +23,7 @@
     "isActive": true
   },
   {
-    "id": "dest_008",
+    "id": "dest_002",
     "name": "Nusa Penida",
     "location": "Bali, Indonesia",
     "category": "beach",
@@ -46,7 +46,7 @@
     "isActive": true
   },
   {
-    "id": "dest_009",
+    "id": "dest_003",
     "name": "Gili Trawangan",
     "location": "Lombok, Indonesia",
     "category": "beach",
@@ -69,7 +69,7 @@
     "isActive": true
   },
   {
-    "id": "dest_010",
+    "id": "dest_004",
     "name": "Ijen Crater",
     "location": "East Java, Indonesia",
     "category": "mountain",
@@ -92,7 +92,7 @@
     "isActive": true
   },
   {
-    "id": "dest_011",
+    "id": "dest_005",
     "name": "Kawah Putih Ciwidey",
     "location": "West Java, Indonesia",
     "category": "mountain",
@@ -115,7 +115,7 @@
     "isActive": true
   },
   {
-    "id": "dest_012",
+    "id": "dest_006",
     "name": "Ranu Kumbolo Camp",
     "location": "East Java, Indonesia",
     "category": "camping",
@@ -138,7 +138,7 @@
     "isActive": true
   },
   {
-    "id": "dest_013",
+    "id": "dest_007",
     "name": "Bukit Sikunir Dieng",
     "location": "Central Java, Indonesia",
     "category": "camping",
