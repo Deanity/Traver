@@ -20,6 +20,25 @@ class CategoryModel {
     );
   }
 
+  String get imagePath {
+    switch (id.toLowerCase()) {
+      case 'beach':
+        return 'assets/images/categories/beach.png';
+      case 'mountain':
+        return 'assets/images/categories/mountain.png';
+      case 'forest':
+        return 'assets/images/categories/forest.png';
+      case 'ocean':
+        return 'assets/images/categories/ocean.png';
+      case 'camping':
+        return 'assets/images/categories/camping.png';
+      case 'fishing':
+        return 'assets/images/categories/fishing.png';
+      default:
+        return 'assets/images/categories/mountain.png';
+    }
+  }
+
   Map<String, dynamic> toJson() => {
         'id': id,
         'name': name,

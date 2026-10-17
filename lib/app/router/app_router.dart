@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../core/widgets/placeholder_screen.dart';
 import '../../features/auth/auth.dart';
+import '../../features/home/home.dart';
 import '../../features/onboarding/onboarding.dart';
 import 'main_shell_screen.dart';
 import 'routes.dart';
@@ -64,7 +65,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: AppRoutes.home,
-                builder: (context, state) => const PlaceholderScreen(title: 'Home'),
+                builder: (context, state) => const HomeScreen(),
               ),
             ],
           ),
