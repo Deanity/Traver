@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:traver/core/constants/app_constants.dart';
 import 'package:traver/core/theme/theme.dart';
+import 'package:traver/core/utils/formatters.dart';
 import 'package:traver/core/widgets/rating_stars.dart';
 import 'package:traver/features/destination/data/destination_model.dart';
 
@@ -22,10 +24,9 @@ class PopularPackageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final imagePath = destination.images.isNotEmpty
         ? destination.images.first
-        : 'assets/onBoardingImage/Image-1.png';
+        : AssetPaths.onboarding1;
 
-    // Format price e.g. "$745,00" or "$745.00"
-    final formattedPrice = '\$${destination.price.toStringAsFixed(2).replaceAll('.', ',')}';
+    final formattedPrice = Formatters.price(destination.price);
 
     return Container(
       margin: const EdgeInsets.only(bottom: 14),

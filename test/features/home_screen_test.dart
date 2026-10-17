@@ -31,7 +31,7 @@ void main() {
       maxGuests: 10,
       rating: 4.8,
       reviewCount: 120,
-      images: ['assets/images/destinations/kuta_beach.png'],
+      images: ['assets/images/destinations/raja_ampat.png'],
       included: ['flight', 'hotel'],
       about: 'Kuta beach description',
       isPopular: true,
@@ -49,7 +49,7 @@ void main() {
       maxGuests: 8,
       rating: 4.9,
       reviewCount: 145,
-      images: ['assets/images/destinations/bromo.png'],
+      images: ['assets/images/destinations/ijen_crater.png'],
       included: ['hotel'],
       about: 'Bromo description',
       isPopular: true,
@@ -67,7 +67,7 @@ void main() {
       maxGuests: 8,
       rating: 4.8,
       reviewCount: 156,
-      images: ['assets/images/destinations/kuta_resort.png'],
+      images: ['assets/images/destinations/nusa_penida.png'],
       included: ['flight', 'hotel'],
       about: 'A resort is a place used for vacation, relaxation or as a day...',
       isPopular: true,
@@ -85,7 +85,7 @@ void main() {
       maxGuests: 6,
       rating: 4.8,
       reviewCount: 112,
-      images: ['assets/images/destinations/jepara_resort.png'],
+      images: ['assets/images/destinations/gili_trawangan.png'],
       included: ['hotel'],
       about: 'A resort is a place used for vacation, relaxation or as a day...',
       isPopular: true,
@@ -138,9 +138,9 @@ void main() {
     // 6. Popular Package Section
     expect(find.text('Popular Package'), findsOneWidget);
     expect(find.text('Kuta Resort'), findsOneWidget);
-    expect(find.text('\$745,00'), findsOneWidget);
+    expect(find.text('\$745.00'), findsOneWidget);
     expect(find.text('Jepara Resort'), findsOneWidget);
-    expect(find.text('\$545,00'), findsOneWidget);
+    expect(find.text('\$545.00'), findsOneWidget);
   });
 
   testWidgets('HomeScreen displays dynamic user name when logged in', (tester) async {

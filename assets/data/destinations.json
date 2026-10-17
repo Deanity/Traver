@@ -12,8 +12,8 @@
     "rating": 5.0,
     "reviewCount": 187,
     "images": [
-      "assets/images/destinations/rajaAmpat.png",
-      "assets/onBoardingImage/Image-3.png"
+      "assets/images/destinations/raja_ampat.png",
+      "assets/images/onboarding/onboarding_3.png"
     ],
     "included": ["flight", "hotel", "tours"],
     "about": "Island-hop through emerald lagoons and limestone karsts, then snorkel over some of the richest coral reefs on Earth.",
@@ -35,8 +35,8 @@
     "rating": 4.7,
     "reviewCount": 134,
     "images": [
-      "assets/images/destinations/nusaPenida.png",
-      "assets/onBoardingImage/Image-1.png"
+      "assets/images/destinations/nusa_penida.png",
+      "assets/images/onboarding/onboarding_1.png"
     ],
     "included": ["hotel", "tours"],
     "about": "Stand on the cliffs of Kelingking Beach and swim with manta rays along the dramatic southern coast of Nusa Penida.",
@@ -58,8 +58,8 @@
     "rating": 4.7,
     "reviewCount": 142,
     "images": [
-      "assets/images/destinations/giliTrawangan.png",
-      "assets/onBoardingImage/Image-2.png"
+      "assets/images/destinations/gili_trawangan.png",
+      "assets/images/onboarding/onboarding_2.png"
     ],
     "included": ["flight", "hotel", "tours"],
     "about": "Relax on white-sand shores, snorkel with sea turtles, and enjoy car-free island life on the lively Gili Trawangan.",
@@ -81,8 +81,8 @@
     "rating": 4.8,
     "reviewCount": 109,
     "images": [
-      "assets/images/destinations/ijenCrater.png",
-      "assets/onBoardingImage/Image-2.png"
+      "assets/images/destinations/ijen_crater.png",
+      "assets/images/onboarding/onboarding_2.png"
     ],
     "included": ["hotel", "tours"],
     "about": "Hike before dawn to see the rare electric blue fire and the turquoise acid lake inside the Ijen volcano crater.",
@@ -104,8 +104,8 @@
     "rating": 4.6,
     "reviewCount": 76,
     "images": [
-      "assets/images/destinations/kawahPutihCiwidey.png",
-      "assets/onBoardingImage/Image-1.png"
+      "assets/images/destinations/kawah_putih_ciwidey.png",
+      "assets/images/onboarding/onboarding_1.png"
     ],
     "included": ["hotel", "tours"],
     "about": "Admire the milky turquoise crater lake of Kawah Putih, surrounded by mist and the cool air of the Ciwidey highlands.",
@@ -127,8 +127,8 @@
     "rating": 4.8,
     "reviewCount": 83,
     "images": [
-      "assets/images/destinations/ranuKumbolo.png",
-      "assets/onBoardingImage/Image-3.png"
+      "assets/images/destinations/ranu_kumbolo.png",
+      "assets/images/onboarding/onboarding_3.png"
     ],
     "included": ["hotel", "tours"],
     "about": "Pitch your tent beside a serene highland lake on the Mount Semeru trail and wake up to a golden sunrise over the water.",
@@ -150,8 +150,8 @@
     "rating": 4.7,
     "reviewCount": 91,
     "images": [
-      "assets/images/destinations/bukitDieng.png",
-      "assets/onBoardingImage/Image-2.png"
+      "assets/images/destinations/bukit_dieng.png",
+      "assets/images/onboarding/onboarding_2.png"
     ],
     "included": ["hotel", "tours"],
     "about": "Camp on the Dieng Plateau and watch the golden sunrise rise above a sea of clouds with Mount Sindoro in the distance.",
